@@ -2,6 +2,5 @@
 
 Made with my mentor at [Bloc](http://bloc.io).
 
-## Steps
-1- We created the bloccit app by rails new
-2- changed the readme file to .md
+My app name is raybloccit
+My app address is https://raybloccit.herokuapp.com/
