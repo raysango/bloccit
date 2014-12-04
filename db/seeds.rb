@@ -31,7 +31,7 @@ users=User.all
  end
 user=User.first
 user.skip_reconfirmation!
-user.update_attributes(
+user.update_attributes!(
   name: "Raymond Morcos",
   email: "remongeorge@live.com",
   password: "Password"
