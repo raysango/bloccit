@@ -27,6 +27,8 @@ gem 'jquery-rails'
 gem 'faker'
 gem 'devise'
 gem 'pundit'
+gem 'redcarpet'
+gem 'simple_form'
 gem 'figaro', '1.0'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
