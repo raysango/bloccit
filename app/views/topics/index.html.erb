@@ -3,7 +3,8 @@
     <% if policy(Topic.new).create? %>
       <%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
     <% end %>
-  </div>
+</div></br>
+<%= will_paginate @topics %>
 <div class="row">
   <div class="col-md-8">
     <% @topics.each do |topic| %>
@@ -17,6 +18,7 @@
           </small>
         </div>
       </div>
-    <% end %>
+    <% end %></br>
+    <%= will_paginate @topics %>
   </div>
 </div>

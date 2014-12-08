@@ -34,6 +34,7 @@ gem 'turbolinks'
 gem 'carrierwave'
 gem 'mini_magick', '~> 3.5.0'
 gem 'fog'
+gem 'will_paginate', '~>3.0.5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
