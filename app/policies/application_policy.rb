@@ -5,6 +5,10 @@ class ApplicationPolicy
     @user = user
     @record = record
   end
+  
+  def can_moderate?(user, record)
+    user.present? && (record.user == user || user.admin? || user.moderator?)
+  end
 
   def index?
     true
