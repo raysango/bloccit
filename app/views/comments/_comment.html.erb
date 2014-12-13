@@ -1,7 +1,6 @@
 <div class= "row">
   <div class = "col-md-8">
-    <% @comments.each do |comment| %>
-    <% if comment.body != nil %>
+
     <div class = "media">
       <div class = "media-body">
         <h4 class = "media-heading">
@@ -10,7 +9,6 @@
         <div class="media">
   <%= link_to '#', class: 'pull-left' do %>
     <%= image_tag(comment.user.avatar.small.url) if comment.user.avatar? %>
-  <% end %>
         <small>
           <%= comment.user.name %> commented <%= time_ago_in_words(comment.created_at) %> ago
           <% if policy(comment).destroy? %>
@@ -19,7 +17,6 @@
         </small>
       </div>
     </div>
-    <%end%>
     <%end%>
   </div>
 </div>
