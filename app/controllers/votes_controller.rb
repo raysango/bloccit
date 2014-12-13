@@ -23,7 +23,7 @@ class VotesController < ApplicationController
       authorize @vote, :update?
       @vote.update_attributes(:value, new_value)
     else
-      @vote = current_user.votes.build(:value, new_value, @post)
+      @vote = current_user.votes.build(value: new_value, post: @post)
       authorize @vote, :create?
       @vote.save
     end
