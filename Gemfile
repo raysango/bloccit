@@ -8,7 +8,6 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-gem 'bootstrap-sass', '~> 3.1.1'
 group :development do
   gem 'sqlite3'
 end
@@ -35,6 +34,7 @@ gem 'carrierwave'
 gem 'mini_magick', '~> 3.5.0'
 gem 'fog'
 gem 'will_paginate', '~>3.0.5'
+gem 'bootstrap-sass', '3.2.0.2'
 # rspec-rails framework gem
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
