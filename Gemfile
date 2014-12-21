@@ -38,6 +38,7 @@ gem 'bootstrap-sass', '3.2.0.2'
 # rspec-rails framework gem
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
+  gem 'capybara'
 end
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
