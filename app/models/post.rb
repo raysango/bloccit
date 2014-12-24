@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
   validates :body, length: {minimum: 20}, presence: true
   mount_uploader :image, ImageUploader
   scope :visible_to, -> (user) { user ? all : joins(:topic).where('topics.public' => true) }
+  #   to be used at users_controller and posts_controller
   def up_votes
     votes.where(value: 1).count
   end
