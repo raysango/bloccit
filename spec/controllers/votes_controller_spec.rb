@@ -1,14 +1,15 @@
 require 'rails_helper'
 
 describe VotesController do 
-  include TestFactories 
   include Devise::TestHelpers
+  include Warden::Test::Helpers
+  Warden.test_mode!
 
   before do 
     request.env["HTTP_REFERER"] = '/'
-    @user = authenticated_user
-    @post = associated_post
-    sign_in @user
+    @user = create(:user)
+    @post = create(:post, user: @user)
+    login_as(@user, :scope => :user)
   end
 
   describe '#up_vote' do
